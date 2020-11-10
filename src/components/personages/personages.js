@@ -4,8 +4,8 @@ function personages(props){
     return(
        <div>
            <p>{id}</p>
-    <p>{name}</p>
-    <p>{description}</p>
+           <p>{name}</p>
+           <p>{description}</p>
        </div>
     );
 }
