@@ -27,11 +27,12 @@ body{
     border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(255,255,255,0.05);
     list-style: none;
+    display: flex;
 }    
 
 .wrapper .sidebar ul li a{
     color: #bdb8d7;
-    display: block;
+    display: flex;
     text-decoration: none;
 }
 .wrapper .sidebar ul{
@@ -48,4 +49,12 @@ body{
 
 .wrapper .main_content .info div{
     margin-bottom: 20px;
+}
+.sidebar_img{
+    width: 34px;
+    height: 34px;
+}
+
+.sidebar_p{
+    margin: auto auto auto 10px;
 }

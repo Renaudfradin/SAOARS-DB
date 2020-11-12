@@ -6,20 +6,26 @@ import Scoot from '../Scoot/Scoot.js'
 import Equipement from '../Equipement/Equipement.js'
 import Home from '../Home/Home.js'
 import className from 'classnames';
+import logohome from './nav_main.png'
+import logoperso from './nav_character.png'
+import logoequipement from './nav_equipment.png'
+import logoitem from './nav_item.png'
+import logoscoot from './nav_scout.png'
+import logoarme from './nav_weapon.png'
 import './HeaderNav.css'
 function HeaderNav() {
     return(
         <BrowserRouter>
-            <div className={className("wrapper")} id="aa">
+            <div className={className("wrapper")}>
                 <div className={className("sidebar")}>
                     <h2>SAOARS DB</h2>
                     <ul>
-                        <li><Link to={`/`}>Home</Link></li>
-                        <li><Link to={`/personages`}>Personages</Link></li>
-                        <li><Link to={`/arme`}>Arme</Link></li>
-                        <li><Link to={`/objet`}>Objet</Link></li>
-                        <li><Link to={`/scoot`}>Scoot</Link></li>
-                        <li><Link to={`/equipement`}>Equipement</Link></li>
+                        <li><Link to={`/`}><img className={className("sidebar_img")} src={logohome} alt=""></img> <p className={className("sidebar_p")}>Home</p></Link></li>
+                        <li><Link to={`/personages`}><img className={className("sidebar_img")} src={logoperso} alt=""></img> <p className={className("sidebar_p")}>Personages</p></Link></li>
+                        <li><Link to={`/arme`}><img className={className("sidebar_img")} src={logoarme} alt=""></img> <p className={className("sidebar_p")}>Arme</p></Link></li>
+                        <li><Link to={`/objet`}><img className={className("sidebar_img")} src={logohome} alt=""></img> <p className={className("sidebar_p")}>Objet</p></Link></li>
+                        <li><Link to={`/scoot`}><img className={className("sidebar_img")} src={logoscoot} alt=""></img> <p className={className("sidebar_p")}>Scoot</p></Link></li>
+                        <li><Link to={`/equipement`}><img className={className("sidebar_img")} src={logoequipement} alt=""></img> <p className={className("sidebar_p")}>Equipement</p></Link></li>
                     </ul>
                 </div>
                 <div className={className("main_content")}>
