@@ -9,7 +9,6 @@ import className from 'classnames';
 import logohome from './nav_main.png'
 import logoperso from './nav_character.png'
 import logoequipement from './nav_equipment.png'
-import logoitem from './nav_item.png'
 import logoscoot from './nav_scout.png'
 import logoarme from './nav_weapon.png'
 import './HeaderNav.css'
