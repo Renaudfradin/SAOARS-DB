@@ -2,6 +2,7 @@ import {useState} from 'react';
 import usePersonages from '../../hoooks/usePersonages/usePersonages.js'
 import Listepersonages from '../listpersonages/listepersonages.js'
 import Filter from '../Filter/Filter.js'
+import Title from '../TiltePageDocument/TiltePageDocument.js'
 function PersonagePage() {
     const perso = usePersonages();
     console.log(perso);
@@ -19,7 +20,8 @@ function PersonagePage() {
         .filter(art => art.name.includes(filters.name))
     return(
         <div>
-            <h1>les personages</h1>
+            <Title title={"Personages - SAOARS DB"}></Title>
+            <h1>Les personages</h1>
             <Filter name={filters.name} handleFilterChange={handleFilterChange}></Filter>
             <Listepersonages perso={filteredArticles}></Listepersonages>
         </div>
